@@ -1,6 +1,6 @@
 import { Status } from 'https://deno.land/std/http/http_status.ts';
-import { serve } from 'https://deno.land/std@0.114.0/http/server.ts';
-import { delay } from 'https://deno.land/x/delay@v0.2.0/mod.ts';
+import { serve } from 'https://deno.land/std@0.114.0/http/server.ts'
+import { delay } from './utils.ts';
 
 serve(async (req: Request) => {
   const url = new URL(req.url);
