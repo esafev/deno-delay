@@ -15,5 +15,5 @@ serve(async (req: Request) => {
   });
   
   await delay(preparedMsParam);
-  return new Response(`Request after ${preparedMsParam}ms`);
+  return new Response(`Response after ${preparedMsParam}ms`);
 })
